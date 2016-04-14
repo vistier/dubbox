@@ -23,7 +23,9 @@ import java.lang.annotation.Target;
 
 /**
  * Reference
- * 
+ *
+ *  修改 将check默认修改成true解决使用注解时设置check无效
+ *
  * @author william.liangf
  * @export
  */
@@ -48,7 +50,7 @@ public @interface Reference {
 
     boolean injvm() default false;
 
-    boolean check() default false;
+    boolean check() default true;
 
     boolean init() default false;
 
